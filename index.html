@@ -1,101 +1,187 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Đường Nguyễn Thị Định</title>
-    <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Công trình số hóa</title>
+  
+  <style>
+    
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+    @font-face {
+  font-family: 'UTM HelveIns';
+  src: url('fonts/UTM HelvetIns.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="headerweb">
-        <!-- Header (ảnh gộp logo1 + logo2 + chữ PHƯỜNG CÁT LÁI) -->
-        <div class="header">
-          <img src="IMG/logocatlai.png" alt="Header Image" />
-        </div>
 
-        <!-- Content -->
-        <div class="content">
-          <div class="portrait">
-            <img src="https://media.songdep.com.vn/files/chinguyen/2021/09/02/thai-su-le-van-thinh-doi-lai-dat-khien-su-than-nha-tong-cung-hong-2-161017.jpg" alt="Ảnh chân dung" />
-          </div>
-          <div class="title">ĐƯỜNG VÕ CHÍ CÔNG</div>
-        </div>
-      </div>
+    body {
+      margin: 0 auto;
+      width: 1200px;
+      font-family: 'UTM HelveIns', Arial, sans-serif;
+    }
 
-      <div class="text">
-        <div class="contenttext">
-          <div class="tdls">
-          <div class="">ĐỒNG CHÍ VÕ CHÍ CÔNG (1912 – 2011)</div>
-        </div>
-          <div class="tdt">QUÁ TRÌNH HOẠT ĐỘNG CÁCH MẠNG</div>
-          <ul class="tdt2">
-            <li>1936: Bí thư Chi bộ ghép.</li>
-            <li>1940: Bí thư Tỉnh ủy lâm thời Quảng Nam – Đà Nẵng.</li>
-            <li>1941–1942: Hoạt động tại Quảng Nam – Đà Nẵng, xây dựng cơ sở cách mạng.</li>
-            <li>1943: Bị địch bắt giam tại Buôn Ma Thuột.</li>
-            <li>1945: Sau Tổng khởi nghĩa, chỉ huy cướp chính quyền ở Quảng Nam.</li>
-            <li>1946–1954: Giữ nhiều chức vụ trong Tỉnh ủy Quảng Nam – Đà Nẵng, Khu ủy V.</li>
-            <li>1955–1960: Bí thư Tỉnh ủy Quảng Nam – Đà Nẵng, hoạt động chống Mỹ.</li>
-            <li>1960: Ủy viên BCH Trung ương Đảng, Bí thư Khu ủy V.</li>
-            <li>1965–1975: Lãnh đạo chiến trường Khu V, sau là Bí thư Trung ương Cục miền Nam, Phó Bí thư Quân ủy Miền.</li>
-            <li>1976–1986: Phó Thủ tướng Chính phủ, Chủ nhiệm Ủy ban Kế hoạch Nhà nước, Phó Chủ tịch Hội đồng Bộ trưởng.</li>
-            <li>1987–1991: Chủ tịch Hội đồng Nhà nước.</li>
-            <li>Từ 1992: Cố vấn BCH Trung ương Đảng.</li>
-          </ul>
-          <div class="tdt">=> Là nhà lãnh đạo cấp cao của Đảng và Nhà nước, được nhân dân kính trọng, đồng chí mến phục, suốt đời gắn bó với sự nghiệp cách mạng, có nhiều đóng góp quan trọng trong kháng chiến chống Pháp, Mỹ và xây dựng đất nước.</div>
-        </div>
-      </div>
+    #main {
+      background-image: url("IMG/cube-01.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 1200px;
+      height: 700px;
 
-      <div id="diadiem2">
-        <div class="diadiem-content">
-          <div class="diadiem-text">
-            <p class="diadiem-title">1. TRỤ SỞ</p>
-            <a href="https://www.google.com/maps/place/Vi%E1%BB%87n+ki%E1%BB%83m+s%C3%A1t+nh%C3%A2n+d%C3%A2n+c%E1%BA%A5p+cao+t%E1%BA%A1i+TPHCM/@10.7871046,106.7265953,13z/data=!4m13!1m5!2m4!1zMS4gVHLhu7Egc-G7nzogVmnhu4duIGtp4buDbSBzw6F0IG5ow6JuIGTDom4gY-G6pXAgY8OhbyB04bqhaSBUUEhDTTog!5m2!5m1!1s2025-09-16!3m6!1s0x317525263888aaf9:0x47a096e616ac1dc!8m2!3d10.7746283!4d106.7804557!15sCkQxLiBUcuG7sSBz4bufOiBWaeG7h24ga2nhu4NtIHPDoXQgbmjDom4gZMOibiBj4bqlcCBjw6FvIHThuqFpIFRQSENNOlpDIkExIHRy4buxIHPhu58gdmnhu4duIGtp4buDbSBzw6F0IG5ow6JuIGTDom4gY-G6pXAgY8OhbyB04bqhaSB0cGhjbZIBEWdvdmVybm1lbnRfb2ZmaWNlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5UVU5CZW1SMVJGRkJFQUWqAasBEAEqPyI7MSB0cuG7sSBz4bufIHZp4buHbiBraeG7g20gc8OhdCBuaMOibiBkw6JuIGPhuqVwIGPDoW8gdOG6oWkoQjIfEAEiG606dsve17SdpShlacWx7zN7jvaQn0eIFywh6jJFEAIiQTEgdHLhu7Egc-G7nyB2aeG7h24ga2nhu4NtIHPDoXQgbmjDom4gZMOibiBj4bqlcCBjw6FvIHThuqFpIHRwaGNt4AEA-gEECAAQJg!16s%2Fg%2F11v5d7xj2c?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"><p class="diadiem-title"><i class="fas fa-map-marker-alt"></i>VIỆN KIỂM SÁT NHÂN DÂN <br>CẤP CAO TẠI TPHCM</p></a>
-          </div>
-          <div class="diadiem-image">
-            <img
-              src="https://laza.vn/storage/uploads/2023/article/images/2023/05-2023/Cong_thuc_ga_ham_dong_trung_ha_thao_tang_cuong_suc_khoe_nang_cao_mien_dich_cho_ca_gia_dinh_02.jpg"
-              alt="Món ăn"
-            />
-          </div>
-        </div>
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        <div class="diadiem-content2" style="gap: 50px;">
-          <!-- Bên trái: 3 ảnh tròn xếp dọc, bo viền vàng -->
-          <div class="diadiem-images-vertical">
-            <div class="circle-vertical">
-              <img
-                class="circle-image1"
-                src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/Logo-Web-Bach-Hoa-Xanh-V.png"
-                alt="Ảnh 1"
-              />
-            </div>
-            <div class="circle-vertical">
-              <img
-                class="circle-image2"
-                src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/Logo-Web-Bach-Hoa-Xanh-V.png"
-                alt="Ảnh 2"
-              />
-            </div>
-            <div class="circle-vertical">
-              <img
-                class="circle-image3"
-                src="https://cdn.haitrieu.com/wp-content/uploads/2022/03/Logo-Web-Bach-Hoa-Xanh-V.png"
-                alt="Ảnh 3"
-              />
-            </div>
-          </div>
-          <!-- Bên phải: chữ -->
-          <div class="diadiem-text" style="padding-bottom: 100px;">
-            <p class="diadiem-title">2. PHIM TRƯỜNG</p>
-            <a href="https://www.google.com/maps/place/Phim+Tr%C6%B0%E1%BB%9Dng+Sunny+Garden/@10.7827881,106.7872136,19.66z/data=!4m6!3m5!1s0x31752542392b3495:0x7b6e8bd02016b7e0!8m2!3d10.7830487!4d106.7878305!16s%2Fg%2F11r20wg_cq?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D"><p class="diadiem-title"><i class="fas fa-map-marker-alt"></i>SCTV</p></a>
-        </div>
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 60px 120px;
+      margin-top: 90px;
+    }
 
-        <!-- Content3 -->
-      </div>
+    .button {
+  position: relative;
+  display: inline-block;
+  font-family: 'UTM HelveIns', Arial, sans-serif;
+  padding: 25px 40px;
+  font-size: 18px;
+  color: red;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 3px 5px 8px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  border: none;
+  text-decoration: none; /* tránh gạch chân */
+  text-align: center;
+}
+
+.button:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+.button span {
+  position: absolute;
+  display: block;
+}
+
+    .button span:nth-child(1) {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, red);
+      animation: animate1 1s linear infinite;
+    }
+
+    @keyframes animate1 {
+      0% { left: -100%; }
+      50%, 100% { left: 100%; }
+    }
+
+    .button span:nth-child(2) {
+      top: -100%;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(180deg, transparent, red);
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+    }
+
+    @keyframes animate2 {
+      0% { top: -100%; }
+      50%, 100% { top: 100%; }
+    }
+
+    .button span:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, red);
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes animate3 {
+      0% { right: -100%; }
+      50%, 100% { right: 100%; }
+    }
+
+    .button span:nth-child(4) {
+      bottom: -100%;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: linear-gradient(360deg, transparent, red);
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+    }
+
+    @keyframes animate4 {
+      0% { bottom: -100%; }
+      50%, 100% { bottom: 100%; }
+    }
+
+    /* Responsive cho điện thoại */
+/* Responsive cho điện thoại: 1 nút 1 cột */
+@media (max-width: 768px) {
+  body { width: 100%; }
+  #main { 
+    
+    background-image: url("IMG/HOME2.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    width: 100%; height: 700px; }
+
+  .buttons {
+    grid-template-columns: 1fr; /* 1 cột, xếp dọc */
+    grid-gap: 20px; /* khoảng cách giữa các nút */
+    padding: 0 10px;
+  }
+
+  .button {
+    padding: 15px 20px; /* vừa màn hình điện thoại */
+    font-size: 16px;
+  }
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+  </style>
+</head>
+<body>
+  <main>
+    <div id="main">
+      <div class="buttons">
+  <a href="NTD.html" class="button">
+    <span></span><span></span><span></span><span></span>
+    ĐƯỜNG NGUYỄN THỊ ĐỊNH
+  </a>
+  <a href="LVT.html" class="button">
+    <span></span><span></span><span></span><span></span>
+    ĐƯỜNG LÊ VĂN THỊNH
+  </a>
+  <a href="VCC.html" class="button">
+    <span></span><span></span><span></span><span></span>
+    ĐƯỜNG VÕ CHÍ CÔNG
+  </a>
+  <a href="DVC.html" class="button">
+    <span></span><span></span><span></span><span></span>
+    ĐƯỜNG ĐỒNG VĂN CỐNG
+  </a>
+</div>
+
     </div>
-  </body>
+  </main>
+</body>
 </html>
